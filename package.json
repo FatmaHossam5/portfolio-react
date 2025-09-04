@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/portfolio-react",
+  "homepage": "https://FatmaHossam5.github.io/portfolio-react",
   "dependencies": {
     "framer-motion": "^12.23.12",
     "react": "^19.1.1",
