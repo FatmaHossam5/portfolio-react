@@ -1,0 +1,113 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3252DF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#152C5B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glass effect filter -->
+    <filter id="glass" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offset"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.1"/>
+      <feComposite in2="offset" operator="in"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="100" r="80" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="100" cy="530" r="60" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="300" cy="200" r="40" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="900" cy="400" r="50" fill="rgba(255,255,255,0.04)"/>
+  
+  <!-- Main Content Area -->
+  <g transform="translate(80, 80)">
+    
+    <!-- Logo -->
+    <text x="0" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" fill="white" letter-spacing="-2px">
+      Staycation.
+    </text>
+    
+    <!-- Tagline -->
+    <text x="0" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="300" fill="rgba(255,255,255,0.95)">
+      Your Perfect Stay Just a Click Away
+    </text>
+    
+    <!-- Feature badges -->
+    <g transform="translate(0, 170)">
+      <!-- Hotel badge -->
+      <rect x="0" y="0" width="180" height="45" rx="22" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+      <text x="25" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="white">🏨 Room Booking</text>
+      
+      <!-- Payment badge -->
+      <rect x="200" y="0" width="170" height="45" rx="22" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+      <text x="225" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="white">💳 Secure Payment</text>
+      
+      <!-- Rating badge -->
+      <rect x="390" y="0" width="140" height="45" rx="22" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+      <text x="415" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="white">⭐ Top Rated</text>
+    </g>
+    
+    <!-- CTA Button -->
+    <g transform="translate(0, 250)">
+      <rect x="0" y="0" width="180" height="50" rx="25" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="90" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="white" text-anchor="middle">Book Your Stay</text>
+    </g>
+    
+  </g>
+  
+  <!-- Hotel illustration on the right -->
+  <g transform="translate(650, 100)">
+    
+    <!-- Main hotel card container -->
+    <rect x="0" y="0" width="400" height="300" rx="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" filter="url(#glass)"/>
+    
+    <!-- Hotel icon -->
+    <circle cx="350" cy="50" r="30" fill="rgba(255,255,255,0.15)"/>
+    <text x="350" y="60" font-size="24" text-anchor="middle" fill="white">🏨</text>
+    
+    <!-- Room cards -->
+    <g transform="translate(30, 80)">
+      <!-- First room card -->
+      <rect x="0" y="0" width="340" height="80" rx="15" fill="rgba(255,255,255,0.95)"/>
+      <text x="20" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#152C5B">Deluxe Ocean View</text>
+      <text x="20" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="rgba(21,44,91,0.8)">2 Guests • King Bed</text>
+      <text x="280" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#3252DF">$299</text>
+      
+      <!-- Second room card -->
+      <rect x="0" y="100" width="340" height="80" rx="15" fill="rgba(255,255,255,0.95)"/>
+      <text x="20" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#152C5B">Premium Suite</text>
+      <text x="20" y="150" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="rgba(21,44,91,0.8)">4 Guests • 2 Bedrooms</text>
+      <text x="280" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#3252DF">$459</text>
+    </g>
+    
+  </g>
+  
+  <!-- Bottom stats -->
+  <g transform="translate(80, 550)">
+    
+    <!-- Properties stat -->
+    <g>
+      <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="rgba(255,255,255,0.9)">500+</text>
+      <text x="0" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)">Properties</text>
+    </g>
+    
+    <!-- Guests stat -->
+    <g transform="translate(120, 0)">
+      <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="rgba(255,255,255,0.9)">10K+</text>
+      <text x="0" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)">Happy Guests</text>
+    </g>
+    
+    <!-- Rating stat -->
+    <g transform="translate(240, 0)">
+      <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="rgba(255,255,255,0.9)">4.9★</text>
+      <text x="0" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)">Rating</text>
+    </g>
+    
+  </g>
+  
+</svg>
