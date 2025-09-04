@@ -69,7 +69,6 @@
 
 .availability-status {
   display: flex;
-  gap: 0.5rem;
   font-size: 0.9rem;
   color: var(--text-gray);
 }
@@ -157,7 +156,7 @@
 }
 
 .contact-item svg {
-  color: var(--primary-color);
+  color: var(--text-white);
   font-size: 1rem;
 }
 

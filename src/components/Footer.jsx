@@ -119,10 +119,7 @@ const Footer = () => {
                   <p className="brand-description">
                     Passionate about creating innovative digital solutions and bringing ideas to life through clean, efficient code.
                   </p>
-                  <div className="availability-status">
-                    <span className="status-indicator available"></span>
-                    <span>Available for new opportunities</span>
-                  </div>
+                
                 </div>
               </motion.div>
               
@@ -184,23 +181,7 @@ const Footer = () => {
                 </div>
                 
                 {/* Enhanced Social Links */}
-                <div className="social-links-enhanced">
-                  {socialLinks.map((link, index) => (
-                    <motion.a
-                      key={index}
-                      href={link.href}
-                      target={link.href.startsWith('http') ? '_blank' : undefined}
-                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className={`social-link ${link.className}`}
-                      aria-label={link.label}
-                      whileHover={{ scale: 1.1, y: -2 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <link.icon />
-                      <span className="social-tooltip">{link.label}</span>
-                    </motion.a>
-                  ))}
-                </div>
+             
               </motion.div>
             </div>
           </div>
@@ -214,11 +195,7 @@ const Footer = () => {
               <div className="copyright">
                 <p>&copy; 2024 FatmaAbuelfateh. All rights reserved.</p>
               </div>
-              <div className="footer-meta">
-                <span className="made-with">
-                  Made with <FaHeart className="heart-icon" /> using modern web technologies
-                </span>
-              </div>
+           
             </div>
           </motion.div>
         </motion.div>
