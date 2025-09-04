@@ -179,42 +179,13 @@
   color: var(--text-gray);
 }
 
-.skill-level {
-  font-size: 0.85rem;
-  color: var(--primary-color);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background: linear-gradient(135deg, 
-    rgba(255, 189, 57, 0.15) 0%, 
-    rgba(255, 189, 57, 0.05) 100%);
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 189, 57, 0.4);
-  backdrop-filter: blur(5px);
-  box-shadow: 
-    0 4px 8px rgba(255, 189, 57, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
 
-.skill-item:hover .skill-level {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, 
-    rgba(255, 189, 57, 0.25) 0%, 
-    rgba(255, 189, 57, 0.1) 100%);
-  border-color: rgba(255, 189, 57, 0.6);
-  box-shadow: 
-    0 6px 12px rgba(255, 189, 57, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-
-/* Progress Bar */
-.skill-progress {
+/* Skills Progress Bar */
+.skills-progress {
   position: relative;
 }
 
-.progress-track {
+.skills-progress-track {
   height: 10px;
   background: linear-gradient(90deg, 
     rgba(255, 255, 255, 0.08) 0%, 
@@ -226,7 +197,7 @@
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.progress-fill {
+.skills-progress-fill {
   height: 100%;
   border-radius: 10px;
   position: relative;
@@ -236,7 +207,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.progress-fill::after {
+.skills-progress-fill::after {
   content: '';
   position: absolute;
   top: 0;
@@ -251,11 +222,11 @@
   border-radius: 10px;
 }
 
-.skill-item:hover .progress-fill {
+.skill-item:hover .skills-progress-fill {
   animation: pulse-progress 2s ease-in-out infinite;
 }
 
-.progress-percentage {
+.skills-progress-percentage {
   position: absolute;
   top: -2.2rem;
   right: 0;
@@ -429,9 +400,6 @@
     width: 100%;
   }
 
-  .skill-level {
-    align-self: flex-start;
-  }
 
   .legend-items {
     gap: 1.5rem;
@@ -446,7 +414,7 @@
     padding: 1.5rem;
   }
 
-  .progress-percentage {
+  .skills-progress-percentage {
     top: -2rem;
     font-size: 0.85rem;
   }
@@ -460,6 +428,7 @@
   .skill-item {
     padding: 1rem;
   }
+
 
   .skill-name {
     font-size: 1.1rem;

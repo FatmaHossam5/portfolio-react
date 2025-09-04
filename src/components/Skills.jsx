@@ -82,12 +82,6 @@ const Skills = () => {
     ]
   }
 
-  const getSkillLevelText = (level) => {
-    if (level >= 90) return 'Expert'
-    if (level >= 80) return 'Professional'
-    if (level >= 70) return 'Proficient'
-    return 'Intermediate'
-  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -140,12 +134,11 @@ const Skills = () => {
               <span className="skill-experience">{skill.experience}</span>
             </div>
           </div>
-          <span className="skill-level">{getSkillLevelText(skill.level)}</span>
         </div>
-        <div className="skill-progress">
-          <div className="progress-track">
+        <div className="skills-progress">
+          <div className="skills-progress-track">
             <motion.div 
-              className="progress-fill"
+              className="skills-progress-fill"
               initial={{ width: 0 }}
               animate={{ width: inView ? `${animatedLevel}%` : 0 }}
               transition={{ duration: 1.5, delay: index * 0.1, ease: "easeOut" }}
@@ -154,7 +147,7 @@ const Skills = () => {
               }}
             />
           </div>
-          <span className="progress-percentage">{animatedLevel}%</span>
+          <span className="skills-progress-percentage">{animatedLevel}%</span>
         </div>
       </motion.div>
     )
