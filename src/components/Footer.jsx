@@ -61,7 +61,7 @@ const Footer = () => {
     },
     {
       icon: FaEnvelope,
-      href: 'mailto:eng.fatma.fateh@gmail.com',
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=eng.fatma.fateh@gmail.com&su=Job%20Opportunity%20Inquiry',
       label: 'Email',
       className: 'email'
     },
@@ -168,7 +168,9 @@ const Footer = () => {
                   <div className="contact-item">
                     <FaEnvelope />
                     <a 
-                      href="mailto:eng.fatma.fateh@gmail.com" 
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.fatma.fateh@gmail.com&su=Job%20Opportunity%20Inquiry"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="contact-link"
                     >
                       eng.fatma.fateh@gmail.com

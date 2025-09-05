@@ -32,7 +32,7 @@ const About = () => {
     },
     { 
       label: 'Experience', 
-      value: '1 Year Professional + Training',
+      value: '1+ Year Professional Experience',
       icon: FaCalendarAlt
     },
     { 
@@ -55,26 +55,26 @@ const About = () => {
     {
       icon: FaLaptopCode,
       title: 'Frontend Development',
-      description: 'HTML5, CSS3, JavaScript, jQuery, React, Context API',
-      level: 90
+      description: 'HTML5, CSS3, JavaScript ES6+, React.js, Bootstrap',
+      level: 88
     },
     {
       icon: FaServer,
       title: 'Backend Development', 
-      description: 'Node.js, Express.js, RESTful APIs',
-      level: 85
+      description: 'Node.js, Express.js, RESTful APIs, Server-side Logic',
+      level: 75
     },
     {
       icon: FaCode,
       title: 'State Management',
-      description: 'Redux Toolkit, React Context, Component State',
-      level: 88
+      description: 'React Context API, Component State, Props Management',
+      level: 82
     },
     {
       icon: FaMobile,
       title: 'Database & Tools',
-      description: 'MongoDB, Git, Modern Development Workflow',
-      level: 82
+      description: 'MongoDB, Git/GitHub, Modern Development Workflow',
+      level: 78
     }
   ]
 
@@ -82,24 +82,27 @@ const About = () => {
     {
       icon: FaGraduationCap,
       title: 'Route Academy Graduate',
-      description: '12-month Full Stack Web Development Diploma'
+      description: 'Full Stack Web Development Program - MERN Stack Specialization'
     },
     {
       icon: FaRocket,
       title: 'Professional Experience',
-      description: '1 Year as React Developer in Tech Company'
+      description: '1+ Years React Developer with Modern Web Technologies'
     },
     {
       icon: FaAward,
-      title: 'Upskilling Bootcamp',
-      description: 'Company Simulation Training Program'
+      title: 'Continuous Learning',
+      description: 'Ongoing Professional Development & Industry Best Practices'
     }
   ]
 
   const handleDownloadCV = () => {
-    // In a real application, you would have the CV file in your public folder
-    const cvUrl = 'https://docs.google.com/document/d/1gPDM6GKLo0_3P_lPEjORQ0MZZBea40LsBCQmPMKygzU/edit'
-    window.open(cvUrl, '_blank', 'noopener,noreferrer')
+    const link = document.createElement('a');
+    link.href = `${import.meta.env.BASE_URL}FatmaAbuelfateh_Resume.pdf`;
+    link.download = 'Fatma_Abuelfateh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 
   const containerVariants = {

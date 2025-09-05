@@ -23,29 +23,29 @@ const Skills = () => {
     frontend: [
       {
         name: 'HTML5',
-        level: 88,
-        experience: '3+ years',
+        level: 90,
+        experience: '2+ years',
         icon: FaHtml5,
         color: '#E34F26'
       },
       {
         name: 'CSS3 & Sass',
-        level: 85,
-        experience: '3+ years',
+        level: 88,
+        experience: '2+ years',
         icon: FaCss3Alt,
         color: '#1572B6'
       },
       {
         name: 'JavaScript (ES6+)',
-        level: 82,
+        level: 85,
         experience: '2+ years',
         icon: FaJs,
         color: '#F7DF1E'
       },
       {
         name: 'React.js',
-        level: 78,
-        experience: '2+ years',
+        level: 82,
+        experience: '1+ years',
         icon: FaReact,
         color: '#61DAFB'
       }
@@ -53,29 +53,29 @@ const Skills = () => {
     backend: [
       {
         name: 'Node.js',
-        level: 72,
-        experience: '1.5+ years',
+        level: 75,
+        experience: '1+ years',
         icon: FaNodeJs,
         color: '#339933'
       },
       {
         name: 'MongoDB',
-        level: 68,
+        level: 70,
         experience: '1+ years',
         icon: FaDatabase,
         color: '#47A248'
       },
       {
         name: 'Bootstrap',
-        level: 80,
+        level: 82,
         experience: '2+ years',
         icon: FaBootstrap,
         color: '#7952B3'
       },
       {
         name: 'Git & GitHub',
-        level: 75,
-        experience: '2+ years',
+        level: 78,
+        experience: '1+ years',
         icon: FaGitAlt,
         color: '#F05032'
       }

@@ -577,6 +577,14 @@
     flex-wrap: wrap;
     white-space: normal;
   }
+
+  .status-text {
+    display: none;
+  }
+
+  .status-dot {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -616,5 +624,13 @@
   
   .contact-link {
     word-break: break-word;
+  }
+
+  .status-text {
+    display: none;
+  }
+
+  .status-dot {
+    display: none;
   }
 }

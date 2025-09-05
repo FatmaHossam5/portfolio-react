@@ -26,6 +26,15 @@ const Contact = () => {
     timezone: 'EST'
   }
 
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = `${import.meta.env.BASE_URL}FatmaAbuelfateh_Resume.pdf`;
+    link.download = 'Fatma_Abuelfateh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   const socialLinks = [
     {
       icon: FaGithub,
@@ -43,7 +52,8 @@ const Contact = () => {
       icon: FaFileDownload,
       href: '#resume',
       label: 'Resume',
-      color: '#FF6B6B'
+      color: '#FF6B6B',
+      isDownload: true
     }
   ]
 
@@ -84,7 +94,7 @@ const Contact = () => {
           <motion.div className="contact-header" variants={itemVariants}>
             <h2 className="contact-title">Let's Work Together</h2>
             <p className="contact-subtitle">
-              Ready to bring your next project to life? Let's connect and discuss how I can contribute to your team.
+              Ready to collaborate on your next project? Let's connect and discuss how my skills can contribute to your goals.
             </p>
           </motion.div>
 
@@ -110,7 +120,9 @@ const Contact = () => {
                   <div className="contact-text">
                     <span className="contact-label">Email</span>
                     <a 
-                      href={`mailto:${contactInfo.email}?subject=Job%20Opportunity%20Inquiry`}
+                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contactInfo.email}&su=Job%20Opportunity%20Inquiry`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="contact-value contact-link"
                     >
                       {contactInfo.email}
@@ -145,7 +157,7 @@ const Contact = () => {
                 <p>I'm always excited to discuss new opportunities and innovative projects.</p>
                 
                 <motion.a
-                  href="https://www.linkedin.com/in/fatmaabuelfateh"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.fatma.fateh@gmail.com&su=Job%20Opportunity%20Inquiry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="primary-cta-button"
@@ -164,19 +176,33 @@ const Contact = () => {
             <h3 className="social-title">Find me on</h3>
             <div className="social-links">
               {socialLinks.map((link, index) => (
-                <motion.a
-                  key={index}
-                  href={link.href}
-                  target={link.href.startsWith('http') ? '_blank' : undefined}
-                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="social-link"
-                  style={{ '--link-color': link.color }}
-                  whileHover={{ scale: 1.1, y: -3 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <link.icon className="social-icon" />
-                  <span className="social-label">{link.label}</span>
-                </motion.a>
+                link.isDownload ? (
+                  <motion.button
+                    key={index}
+                    onClick={handleResumeDownload}
+                    className="social-link social-download-btn"
+                    style={{ '--link-color': link.color }}
+                    whileHover={{ scale: 1.1, y: -3 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <link.icon className="social-icon" />
+                    <span className="social-label">{link.label}</span>
+                  </motion.button>
+                ) : (
+                  <motion.a
+                    key={index}
+                    href={link.href}
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="social-link"
+                    style={{ '--link-color': link.color }}
+                    whileHover={{ scale: 1.1, y: -3 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <link.icon className="social-icon" />
+                    <span className="social-label">{link.label}</span>
+                  </motion.a>
+                )
               ))}
             </div>
           </motion.div>

@@ -44,8 +44,8 @@ const Hero = () => {
   ]
 
   const stats = [
-    { number: '8+', label: 'Projects' },
-    { number: '1', label: 'Year Pro' },
+    { number: '7+', label: 'Projects' },
+    { number: '1+', label: 'Year Pro' },
     { number: '100%', label: 'Dedication' }
   ]
 
@@ -373,7 +373,7 @@ const Hero = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
                 <FaGitAlt />
-                <span>8+ Projects</span>
+                <span>7+ Projects</span>
               </motion.div>
               <motion.div 
                 className="achievement-badge badge-3"
