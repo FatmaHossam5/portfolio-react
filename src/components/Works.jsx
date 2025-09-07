@@ -7,7 +7,9 @@ import {
   FaSearch, 
   FaReact, 
   FaJs,
-  FaThLarge 
+  FaThLarge,
+  FaNodeJs,
+  FaServer
 } from 'react-icons/fa'
 import './Works.css'
 
@@ -34,7 +36,7 @@ const Works = () => {
       image: '/portfolio-react/images/staycation-thumbnail.svg',
       fallbackImage: '/portfolio-react/images/Screenshot 2023-05-21 140809.png',
       category: 'react',
-      technologies: ['React.js', 'TypeScript', 'Material-UI', 'Context API'],
+      technologies: ['React.js', 'TypeScript', 'Material-UI', 'Context API', 'Authentication'],
       liveUrl: 'https://fatmahossam5.github.io/stayCation_Booking/',
       githubUrl: 'https://github.com/FatmaHossam5/stayCation_Booking'
     },
@@ -50,9 +52,10 @@ const Works = () => {
     },
     {
       id: 3,
-      title: 'Noxe Movie Hub',
+      title: 'MovieReact',
       description: 'Comprehensive movie discovery platform with advanced search, ratings, and watchlist functionality',
-      image: '/portfolio-react/images/Screenshot 2023-05-21 140809.png',
+      image: '/portfolio-react/images/MovieReact.png',
+      fallbackImage: '/portfolio-react/images/Screenshot 2023-05-21 140809.png',
       category: 'react',
       technologies: ['React.js', 'TMDb API', 'Bootstrap', 'Router'],
       liveUrl: 'https://fatmahossam5.github.io/moviesReact/',
@@ -63,8 +66,8 @@ const Works = () => {
       title: 'Angora E-commerce',
       description: 'Feature-rich e-commerce platform with shopping cart, product filtering, and responsive design',
       image: '/portfolio-react/images/Screenshot 2023-05-20 155710.png',
-      category: 'javascript',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
+      category: 'fullstack',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage', 'E-commerce'],
       liveUrl: 'https://fatmahossam5.github.io/Angora/',
       githubUrl: 'https://github.com/FatmaHossam5/Angora'
     },
@@ -78,16 +81,7 @@ const Works = () => {
       liveUrl: 'https://fatmahossam5.github.io/smartLogin/',
       githubUrl: 'https://github.com/FatmaHossam5/smartLogin'
     },
-    {
-      id: 6,
-      title: 'Movies REST API',
-      description: 'Comprehensive RESTful API for movie data with CRUD operations, search functionality, and data validation',
-      image: '/portfolio-react/images/movieApi.png',
-      category: 'javascript',
-      technologies: ['Node.js', 'Express.js', 'REST API', 'JSON'],
-      liveUrl: 'https://fatmahossam5.github.io/movie_API/',
-      githubUrl: 'https://github.com/FatmaHossam5/movie_API'
-    },
+
     {
       id: 7,
       title: 'Party Event Planner',
@@ -97,13 +91,83 @@ const Works = () => {
       technologies: ['jQuery', 'CSS3', 'Animations', 'Responsive'],
       liveUrl: 'https://fatmahossam5.github.io/party_jq/',
       githubUrl: 'https://github.com/FatmaHossam5/party_jq'
+    },
+
+   
+    {
+      id: 13,
+      title: 'Portfolio React',
+      description: 'Modern responsive portfolio website built with React, featuring animated components, project showcase, and contact form',
+      image: '/portfolio-react/images/portfolio-react.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'react',
+      technologies: ['React.js', 'Framer Motion', 'CSS3', 'Responsive Design', 'Vite'],
+      liveUrl: 'https://fatmahossam5.github.io/portfolio-react/',
+      githubUrl: 'https://github.com/FatmaHossam5/portfolio-react'
+    },
+    {
+      id: 14,
+      title: 'User Portal',
+      description: 'Interactive user portal application with food-related features, user management, and modern UI design',
+      image: '/portfolio-react/images/UserportalFood.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'react',
+      technologies: ['React.js', 'JavaScript', 'CSS3', 'User Interface', 'Responsive Design'],
+      liveUrl: 'https://fatmahossam5.github.io/user-Portal/',
+      githubUrl: 'https://github.com/FatmaHossam5/user-Portal'
+    },
+    {
+      id: 15,
+      title: 'Quiz App',
+      description: 'Interactive quiz application with multiple choice questions, scoring system, and engaging user experience',
+      image: '/portfolio-react/images/Quiz.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'react',
+      technologies: ['React.js', 'JavaScript', 'CSS3', 'Quiz Logic', 'State Management'],
+      liveUrl: 'https://fatmahossam5.github.io/quiz-app-github-pages/',
+      githubUrl: 'https://github.com/FatmaHossam5/quiz-app-github-pages'
+    },
+    {
+      id: 16,
+      title: 'Food App',
+      description: 'Comprehensive food application with admin panel, menu management, and user-friendly interface for food ordering',
+      image: '/portfolio-react/images/AdminFood.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'react',
+      technologies: ['React.js', 'JavaScript', 'CSS3', 'Admin Panel', 'Food Management'],
+      liveUrl: 'https://fatmahossam5.github.io/Food-App/',
+      githubUrl: 'https://github.com/FatmaHossam5/Food-App'
+    },
+    {
+      id: 17,
+      title: 'Note App Node.js',
+      description: 'Full-featured note-taking application with CRUD operations, user authentication, and real-time updates',
+      image: '/portfolio-react/images/node.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'nodejs',
+      technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST API'],
+      liveUrl: 'https://note-app-node-js-9er0-git-main-fatmahossam5s-projects.vercel.app?_vercel_share=kQSS05cKCUtNago1R7cbbkckuHZomcae',
+      githubUrl: 'https://github.com/FatmaHossam5/NoteApp_NodeJs'
+    },
+    {
+      id: 18,
+      title: 'E-commerce',
+      description: 'Full-stack e-commerce application with product management, shopping cart, payment integration, and admin dashboard',
+      image: '/portfolio-react/images/node.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'nodejs',
+      technologies: ['Node.js', 'Express.js', 'MongoDB', 'Payment API', 'Admin Panel'],
+      liveUrl: 'https://e-commerce-git-main-fatmahossam5s-projects.vercel.app?_vercel_share=xMSEwyP8LH6xYox1EAlyUKH96DIAvLhQ',
+      githubUrl: 'https://github.com/FatmaHossam5/e-commerce'
     }
   ]
 
   const filters = [
     { id: 'all', label: 'All Projects', icon: FaThLarge },
     { id: 'react', label: 'React', icon: FaReact },
-    { id: 'javascript', label: 'JavaScript', icon: FaJs }
+    { id: 'javascript', label: 'JavaScript', icon: FaJs },
+    { id: 'nodejs', label: 'Node.js', icon: FaNodeJs },
+    { id: 'fullstack', label: 'FullStack', icon: FaServer }
   ]
 
   // Animate stats when component comes into view
