@@ -33,8 +33,8 @@ const Works = () => {
       id: 1,
       title: 'StayCation Booking',
       description: 'Modern hotel booking application with React, TypeScript, and Material-UI featuring user authentication and admin dashboard',
-      image: '/portfolio-react/images/staycation-thumbnail.svg',
-      fallbackImage: '/portfolio-react/images/Screenshot 2023-05-21 140809.png',
+      image: '/portfolio-react/images/Hotel.png',
+      fallbackImage: '/portfolio-react/images/Hotel.png',
       category: 'react',
       technologies: ['React.js', 'TypeScript', 'Material-UI', 'Context API', 'Authentication'],
       liveUrl: 'https://fatmahossam5.github.io/stayCation_Booking/',
@@ -63,11 +63,12 @@ const Works = () => {
     },
     {
       id: 4,
-      title: 'Angora E-commerce',
-      description: 'Feature-rich e-commerce platform with shopping cart, product filtering, and responsive design',
-      image: '/portfolio-react/images/Screenshot 2023-05-20 155710.png',
-      category: 'fullstack',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage', 'E-commerce'],
+      title: 'Angora',
+      description: 'Professional branding website with modern design featuring hero sections, navigation, and interactive elements',
+      image: '/portfolio-react/images/Angora.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'javascript',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Responsive Design', 'Branding'],
       liveUrl: 'https://fatmahossam5.github.io/Angora/',
       githubUrl: 'https://github.com/FatmaHossam5/Angora'
     },
@@ -83,7 +84,7 @@ const Works = () => {
     },
 
     {
-      id: 7,
+      id: 6,
       title: 'Party Event Planner',
       description: 'Interactive event planning application featuring smooth animations, countdown timer, and dynamic content',
       image: '/portfolio-react/images/party.png',
@@ -92,10 +93,8 @@ const Works = () => {
       liveUrl: 'https://fatmahossam5.github.io/party_jq/',
       githubUrl: 'https://github.com/FatmaHossam5/party_jq'
     },
-
-   
     {
-      id: 13,
+      id: 7,
       title: 'Portfolio React',
       description: 'Modern responsive portfolio website built with React, featuring animated components, project showcase, and contact form',
       image: '/portfolio-react/images/portfolio-react.png',
@@ -106,7 +105,7 @@ const Works = () => {
       githubUrl: 'https://github.com/FatmaHossam5/portfolio-react'
     },
     {
-      id: 14,
+      id: 8,
       title: 'User Portal',
       description: 'Interactive user portal application with food-related features, user management, and modern UI design',
       image: '/portfolio-react/images/UserportalFood.png',
@@ -117,7 +116,7 @@ const Works = () => {
       githubUrl: 'https://github.com/FatmaHossam5/user-Portal'
     },
     {
-      id: 15,
+      id: 9,
       title: 'Quiz App',
       description: 'Interactive quiz application with multiple choice questions, scoring system, and engaging user experience',
       image: '/portfolio-react/images/Quiz.png',
@@ -128,7 +127,7 @@ const Works = () => {
       githubUrl: 'https://github.com/FatmaHossam5/quiz-app-github-pages'
     },
     {
-      id: 16,
+      id: 10,
       title: 'Food App',
       description: 'Comprehensive food application with admin panel, menu management, and user-friendly interface for food ordering',
       image: '/portfolio-react/images/AdminFood.png',
@@ -139,7 +138,7 @@ const Works = () => {
       githubUrl: 'https://github.com/FatmaHossam5/Food-App'
     },
     {
-      id: 17,
+      id: 11,
       title: 'Note App Node.js',
       description: 'Full-featured note-taking application with CRUD operations, user authentication, and real-time updates',
       image: '/portfolio-react/images/node.png',
@@ -150,7 +149,7 @@ const Works = () => {
       githubUrl: 'https://github.com/FatmaHossam5/NoteApp_NodeJs'
     },
     {
-      id: 18,
+      id: 12,
       title: 'E-commerce',
       description: 'Full-stack e-commerce application with product management, shopping cart, payment integration, and admin dashboard',
       image: '/portfolio-react/images/node.png',
@@ -161,7 +160,7 @@ const Works = () => {
       githubUrl: 'https://github.com/FatmaHossam5/e-commerce'
     },
     {
-      id: 19,
+      id: 13,
       title: 'Fokir',
       description: 'Modern portfolio website showcasing creative design and interactive user experience with smooth animations',
       image: '/portfolio-react/images/Fokir.png',
@@ -171,23 +170,13 @@ const Works = () => {
       liveUrl: 'https://fatmahossam5.github.io/Fokir/',
       githubUrl: 'https://github.com/FatmaHossam5/Fokir'
     },
+  
     {
-      id: 20,
-      title: 'Angora',
-      description: 'Professional branding website with modern design featuring hero sections, navigation, and interactive elements',
-      image: '/portfolio-react/images/Angora.png',
-      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
-      category: 'javascript',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Responsive Design', 'Branding'],
-      liveUrl: 'https://fatmahossam5.github.io/Angora/',
-      githubUrl: 'https://github.com/FatmaHossam5/Angora'
-    },
-    {
-      id: 21,
+      id: 14,
       title: 'Movie API',
       description: 'Interactive movie discovery application with search functionality, movie posters grid, and detailed movie information',
-      image: '/portfolio-react/images/MovieAPI.png',
-      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      image: '/portfolio-react/images/movieJs.png',
+      fallbackImage: '/portfolio-react/images/movieJs.png',
       category: 'javascript',
       technologies: ['JavaScript', 'Movie API', 'HTML5', 'CSS3', 'Search Functionality'],
       liveUrl: 'https://fatmahossam5.github.io/movie_API/',
