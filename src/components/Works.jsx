@@ -159,6 +159,39 @@ const Works = () => {
       technologies: ['Node.js', 'Express.js', 'MongoDB', 'Payment API', 'Admin Panel'],
       liveUrl: 'https://e-commerce-git-main-fatmahossam5s-projects.vercel.app?_vercel_share=xMSEwyP8LH6xYox1EAlyUKH96DIAvLhQ',
       githubUrl: 'https://github.com/FatmaHossam5/e-commerce'
+    },
+    {
+      id: 19,
+      title: 'Fokir',
+      description: 'Modern portfolio website showcasing creative design and interactive user experience with smooth animations',
+      image: '/portfolio-react/images/Fokir.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'javascript',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Responsive Design', 'Animations'],
+      liveUrl: 'https://fatmahossam5.github.io/Fokir/',
+      githubUrl: 'https://github.com/FatmaHossam5/Fokir'
+    },
+    {
+      id: 20,
+      title: 'Angora',
+      description: 'Professional branding website with modern design featuring hero sections, navigation, and interactive elements',
+      image: '/portfolio-react/images/Angora.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'javascript',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Responsive Design', 'Branding'],
+      liveUrl: 'https://fatmahossam5.github.io/Angora/',
+      githubUrl: 'https://github.com/FatmaHossam5/Angora'
+    },
+    {
+      id: 21,
+      title: 'Movie API',
+      description: 'Interactive movie discovery application with search functionality, movie posters grid, and detailed movie information',
+      image: '/portfolio-react/images/MovieAPI.png',
+      fallbackImage: '/portfolio-react/images/staycation-thumbnail.svg',
+      category: 'javascript',
+      technologies: ['JavaScript', 'Movie API', 'HTML5', 'CSS3', 'Search Functionality'],
+      liveUrl: 'https://fatmahossam5.github.io/movie_API/',
+      githubUrl: 'https://github.com/FatmaHossam5/movie_API'
     }
   ]
 
