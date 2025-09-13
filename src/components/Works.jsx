@@ -297,8 +297,9 @@ const Works = () => {
       exit={{ opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -10 }}
+      whileTap={{ scale: 0.98 }}
     >
-      <div className="project-card">
+      <div className="project-card" tabIndex="0">
         <div className="project-image">
           <img 
             src={project.image} 
