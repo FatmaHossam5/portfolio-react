@@ -2,6 +2,9 @@
   background: var(--background-dark);
   position: relative;
   overflow: hidden;
+  /* Fallback for mobile - ensure section is always visible */
+  min-height: 100vh;
+  display: block;
 }
 
 .works-section::before {
@@ -18,6 +21,19 @@
 .works-content {
   position: relative;
   z-index: 2;
+  /* CSS fallback animation for mobile */
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Section Header */
@@ -257,6 +273,20 @@
     opacity: 1;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 189, 57, 0.8) 100%);
   }
+  
+  /* Ensure section is visible on mobile */
+  .works-section {
+    min-height: auto !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .works-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+  }
 }
 
 .project-info {
@@ -462,6 +492,15 @@
     justify-content: center;
   }
 
+  /* Force visibility on mobile */
+  .works-section,
+  .works-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    transform: none !important;
+  }
+
   .stat-item {
     padding: 1rem;
     min-width: 100px;
@@ -519,6 +558,22 @@
 
   .section-description {
     font-size: 1rem;
+  }
+
+  /* Additional mobile visibility fixes */
+  .works-section,
+  .works-content,
+  .projects-grid,
+  .project-item,
+  .project-card {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    transform: none !important;
+  }
+  
+  .projects-grid {
+    display: grid !important;
   }
 
   .works-stats {

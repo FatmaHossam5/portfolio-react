@@ -15,8 +15,9 @@ import './Works.css'
 
 const Works = () => {
   const [ref, inView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true
+    threshold: 0.1,
+    triggerOnce: true,
+    rootMargin: '-50px 0px'
   })
 
   const [activeFilter, setActiveFilter] = useState('all')
@@ -27,6 +28,7 @@ const Works = () => {
     categories: 0,
     responsive: 0
   })
+  const [fallbackVisible, setFallbackVisible] = useState(false)
 
   const projects = [
     {
@@ -209,9 +211,20 @@ const Works = () => {
     { id: 'fullstack', label: 'FullStack', icon: FaServer }
   ]
 
+  // Fallback timer to ensure content displays on mobile
+  useEffect(() => {
+    const fallbackTimer = setTimeout(() => {
+      if (!inView) {
+        setFallbackVisible(true)
+      }
+    }, 2000) // Show content after 2 seconds if intersection observer hasn't triggered
+
+    return () => clearTimeout(fallbackTimer)
+  }, [inView])
+
   // Animate stats when component comes into view
   useEffect(() => {
-    if (inView) {
+    if (inView || fallbackVisible) {
       const animateStats = () => {
         const targetStats = {
           projects: projects.length,
@@ -237,7 +250,7 @@ const Works = () => {
 
       setTimeout(animateStats, 500)
     }
-  }, [inView])
+  }, [inView, fallbackVisible])
 
   // Filter projects based on active filter and search term
   useEffect(() => {
@@ -353,7 +366,7 @@ const Works = () => {
           className="works-content"
           variants={containerVariants}
           initial="hidden"
-          animate={inView ? "visible" : "hidden"}
+          animate={inView || fallbackVisible ? "visible" : "hidden"}
         >
           {/* Section Header */}
           <motion.div 
