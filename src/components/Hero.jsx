@@ -410,7 +410,8 @@ const Hero = () => {
             <FaArrowRight className="scroll-arrow-enhanced" style={{ transform: 'rotate(90deg)' }} />
           </motion.div>
         </motion.div>
-      </div>
+        </div>
+       
     </section>
   )
 }

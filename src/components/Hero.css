@@ -459,6 +459,7 @@
 }
 
 /* Scroll Indicator */
+
 .scroll-indicator-enhanced {
   position: absolute;
   bottom: 2rem;
@@ -470,6 +471,8 @@
   gap: 1rem;
   cursor: pointer;
   z-index: 3;
+ 
+ 
 }
 
 .scroll-mouse {
@@ -571,5 +574,31 @@
     width: 100%;
     max-width: 250px;
     justify-content: center;
+  }
+  .scroll-indicator-enhanced {
+ 
+display: none;
+
+
+    
+  }
+
+  .scroll-mouse {
+    width: 20px;
+    height: 32px;
+  }
+
+  .scroll-wheel {
+    width: 2px;
+    height: 6px;
+    top: 6px;
+  }
+
+  .scroll-text-enhanced {
+    font-size: 0.7rem;
+  }
+
+  .scroll-arrow-enhanced {
+    font-size: 1rem;
   }
 }
