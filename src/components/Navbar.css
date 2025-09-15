@@ -138,6 +138,8 @@
 
   .nav-toggle {
     display: flex;
+    z-index: 1001;
+    position: relative;
   }
 
   .nav-menu.mobile-menu {
@@ -155,6 +157,7 @@
     gap: 2rem;
     transform: translateX(100%);
     transition: transform 0.3s ease;
+    z-index: 1000;
   }
 
   .nav-menu.mobile-menu.active {
@@ -176,7 +179,7 @@
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    z-index: 999;
   }
 }
 
@@ -191,5 +194,11 @@
 
   .nav-menu.mobile-menu {
     width: 100%;
+    padding: 2rem 1rem;
+  }
+  
+  .nav-menu.mobile-menu .nav-link {
+    width: 100%;
+    max-width: 250px;
   }
 }
