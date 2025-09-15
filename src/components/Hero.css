@@ -32,7 +32,7 @@
   height: 100%;
 }
 
-.geometric-shapes > div {
+.geometric-shapes>div {
   position: absolute;
   opacity: 0.1;
 }
@@ -326,8 +326,13 @@
 }
 
 @keyframes shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 /* Visual Section */
@@ -365,9 +370,17 @@
   border-radius: 50%;
 }
 
-.control.close { background: #ff5f56; }
-.control.minimize { background: #ffbd2e; }
-.control.maximize { background: #27ca3f; }
+.control.close {
+  background: #ff5f56;
+}
+
+.control.minimize {
+  background: #ffbd2e;
+}
+
+.control.maximize {
+  background: #27ca3f;
+}
 
 .file-name {
   font-size: 0.9rem;
@@ -393,11 +406,25 @@
   text-align: right;
 }
 
-.keyword { color: #ff79c6; }
-.variable { color: #8be9fd; }
-.property { color: #50fa7b; }
-.string { color: #f1fa8c; }
-.comment { color: #6272a4; }
+.keyword {
+  color: #ff79c6;
+}
+
+.variable {
+  color: #8be9fd;
+}
+
+.property {
+  color: #50fa7b;
+}
+
+.string {
+  color: #f1fa8c;
+}
+
+.comment {
+  color: #6272a4;
+}
 
 .typing-line {
   position: relative;
@@ -415,8 +442,16 @@
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Achievement Badges */
@@ -471,8 +506,8 @@
   gap: 1rem;
   cursor: pointer;
   z-index: 3;
- 
- 
+
+
 }
 
 .scroll-mouse {
@@ -511,7 +546,7 @@
   .hero-content-grid {
     gap: 2rem;
   }
-  
+
   .hero-name-enhanced {
     font-size: 3rem;
   }
@@ -575,12 +610,9 @@
     max-width: 250px;
     justify-content: center;
   }
+
   .scroll-indicator-enhanced {
- 
-display: none;
-
-
-    
+    display: none;
   }
 
   .scroll-mouse {
