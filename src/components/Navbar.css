@@ -142,6 +142,11 @@
     position: relative;
   }
 
+  /* Ensure navbar doesn't interfere with content */
+  .navbar {
+    z-index: 1000 !important;
+  }
+
   .nav-menu.mobile-menu {
     display: flex;
     position: fixed;
@@ -158,9 +163,12 @@
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1000;
+    /* Ensure mobile menu doesn't block content when closed */
+    pointer-events: none;
   }
 
   .nav-menu.mobile-menu.active {
+    pointer-events: auto;
     transform: translateX(0);
   }
 

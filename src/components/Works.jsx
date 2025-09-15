@@ -424,7 +424,7 @@ const Works = () => {
                 onClick={() => setActiveFilter(filter.id)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              >
+oy               >
                 <filter.icon />
                 <span>{filter.label}</span>
               </motion.button>

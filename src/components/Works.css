@@ -5,6 +5,10 @@
   /* Fallback for mobile - ensure section is always visible */
   min-height: 100vh;
   display: block;
+  /* Ensure section is below navbar but above other content */
+  z-index: 10;
+  /* Add top padding to account for fixed navbar */
+  padding-top: 80px;
 }
 
 .works-section::before {
@@ -267,7 +271,86 @@
   opacity: 1;
 }
 
-/* Mobile touch support */
+/* Mobile touch support - General mobile styles */
+@media (max-width: 768px) {
+  /* Ensure Works section is properly positioned on mobile */
+  .works-section {
+    padding-top: 100px !important;
+    z-index: 5 !important;
+    position: relative !important;
+  }
+
+  .works-content {
+    z-index: 10 !important;
+    position: relative !important;
+  }
+
+  /* Force all interactive elements to work on mobile */
+  .filter-btn {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+    position: relative !important;
+  }
+
+  .project-link {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+    position: relative !important;
+  }
+
+  .project-search {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+    cursor: text !important;
+    z-index: 1000 !important;
+    position: relative !important;
+  }
+
+  .project-card {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+  }
+
+  .project-overlay {
+    pointer-events: auto !important;
+  }
+
+  /* Ensure buttons are clickable */
+  button {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Ensure links are clickable */
+  a {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Ensure inputs are interactive */
+  input {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+}
+
+/* Specific touch device support */
 @media (hover: none) and (pointer: coarse) {
   .project-overlay {
     opacity: 1;
@@ -287,6 +370,13 @@
     visibility: visible !important;
     display: block !important;
   }
+
+  /* Touch active state */
+  .project-card.touch-active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+
 }
 
 .project-info {
@@ -314,6 +404,7 @@
   opacity: 0.9;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -408,6 +499,7 @@
   .project-info p {
     font-size: 0.7rem;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     line-height: 1.3;
   }
 
@@ -454,6 +546,7 @@
   .project-info p {
     font-size: 0.75rem;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
 
   .project-tech {
@@ -612,6 +705,7 @@
   .project-info p {
     font-size: 0.8rem;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
 
   .tech-tag {
