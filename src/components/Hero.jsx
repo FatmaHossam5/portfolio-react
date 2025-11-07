@@ -174,9 +174,7 @@ const Hero = () => {
                 stiffness: 100
               }}
             >
-              Route Academy graduate with 1 year of professional <strong>React development</strong> experience. 
-              I love building modern web apps with the <strong>MERN stack</strong> and turning ideas into reality. 
-              Based in Kitchener, ON - let's create something amazing together!
+              Route Academy graduate and React developer passionate about building modern web apps with the MERN stack and turning ideas into reality. Based in Kitchener, ON — let's create something amazing together!
             </motion.p>
 
             {/* Interactive Stats Grid */}
